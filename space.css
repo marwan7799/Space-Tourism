@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  min-height: 100lvh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(D:/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+  background-color: black;
+  transition: all 0.5s 0s;
+  overflow: hidden;
+}
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  margin-left: 2%;
+}
+
+nav p {
+  height: 1px;
+  width: 36%;
+  background-color: white;
+  margin-left: 4%;
+}
+
+nav ul {
+  height: 10vh;
+  display: flex;
+  width: 55%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  backdrop-filter: blur(2rem);
+}
+
+ul li {
+  position: relative;
+  font: 700 1.2rem sans-serif;
+  cursor: pointer;
+}
+
+li span {
+  font: 100 1rem sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.active:after {
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 196%;
+  left: 0%;
+  transition: all 0.5s 0s;
+}
+
+.activee:after {
+  content: "";
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 120%;
+  left: 0%;
+  transition: all 0.5s 0s;
+}
+
+nav ul li:last-child {
+  margin-right: 100px;
+}
+
+.home {
+  display: flex;
+  height: 85vh;
+  justify-content: space-between;
+}
+
+.home div:not(.box) {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h2 {
+  font: 100 1rem sans-serif;
+  word-spacing: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.box h1 {
+  font: 100 6rem sans-serif;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+.box h3 {
+  font: 100 1rem sans-serif;
+  line-height: 25px;
+}
+
+.box {
+  height: 60%;
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.home aside {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 70% 75%;
+  grid-template-rows: 75% 25%;
+  justify-items: end;
+  align-items: end;
+}
+
+aside h4 {
+  display: flex;
+
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+aside h4 span {
+  font: 100 2rem sans-serif;
+  color: black;
+  text-transform: uppercase;
+}
+
+.destination {
+  display: none;
+  height: 85vh;
+  grid-template-rows: 15% 40% 40% 5%;
+  grid-template-columns: 10% 40% 40% 10%;
+}
+
+.destination h2 {
+  margin: 20px 50px;
+  width: max-content;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+
+.destination div:first-of-type {
+  height: fit-content;
+  width: fit-content;
+  grid-row: 2;
+  grid-column: 2;
+  transition: all 0.5s 0s;
+}
+
+img {
+  transition: all 0.5s 0s;
+}
+.description {
+  transition: all 0.3s 0s;
+  width: 400px;
+  line-height: 25px;
+}
+.destination aside {
+  display: flex;
+  height: 65vh;
+  grid-row: 2 / 3;
+  grid-column: 3;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.destination #planets {
+  grid-row: 2;
+  grid-column: 3;
+  justify-self: center;
+}
+
+.destination aside h1 {
+  font: 100 6rem serif;
+  letter-spacing: 10px;
+  transition: all 0.3s 0s;
+}
+
+.destination aside div:last-of-type {
+  display: flex;
+  justify-content: space-evenly;
+  font: 100 1rem serif;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+#planets a {
+  position: relative;
+  text-decoration: none;
+  font: 200 1.2rem serif;
+  margin: 10px;
+}
+
+div + div {
+  display: flex;
+  flex-direction: column;
+}
+.time,
+.distance {
+  font: 100 2rem sans-serif;
+}
+
+.crew {
+  position: relative;
+  height: 85vh;
+  width: 93vw;
+  display: none;
+  align-self: flex-end;
+  flex-direction: column;
+}
+
+.wraper img {
+  height: 83vh;
+  width: 45vw;
+}
+
+.douglas img {
+  width: 40vw;
+}
+
+.wraper aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.bio {
+  width: 30rem;
+  line-height: 28px;
+  font-size: 1.2rem;
+}
+
+.wraper h3 {
+  font: 100 2rem sans-serif;
+}
+
+.crew_name {
+  text-transform: uppercase;
+  font: 600 4rem open-serif;
+}
+
+.wraper {
+  display: flex;
+  flex-direction: row;
+  gap: 8%;
+  transition: all 1s 0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.crew h2 {
+  transform: translatey(50px);
+  letter-spacing: 5px;
+}
+
+.slider {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  top: 85%;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.ActiveCircle {
+  opacity: 1;
+}
+
+.annoush,
+.mark,
+.victor {
+  display: none;
+  position: absolute;
+  transition: all 1s 0s;
+  transform: translateX(-110%);
+}

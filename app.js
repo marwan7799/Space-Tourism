@@ -1,32 +1,3 @@
-/* ------------------------------------------------------------------
-   app.js — one script for every page. The page announces itself with
-   <body data-page="home | signin | journey | done">.
-
-   Two different fades live here, and they're not the same mechanism:
-
-   1. In-page view swap (home page only): "Destination" is not a
-      separate document any more — clicking it in the nav fades the
-      Home view out and the Destination view in, inside index.html.
-      No navigation happens, so this can be a real, smooth crossfade.
-
-   2. Cross-page fade: Sign in, the pre-flight check and the
-      confirmation page ARE separate documents (they guard real state
-      — who's signed in, what was booked — so they have to be). A
-      real page load can't crossfade, but every page here fades its
-      own body out just before leaving and fades in on arrival, so
-      the whole flow still feels continuous instead of a hard cut.
-
-   Booking flow:
-     destination view ──Book──▶  signin (skipped if already signed in)
-                                       ▼
-                                   journey  (age / height / weight vs. the ship)
-                                       ▼  only if every value is inside the limits
-                                     done   (end of process)
-
-   NOTE: there is no server. Accounts and bookings live in localStorage,
-   so anyone can edit them in dev tools. Treat this as a front-end demo;
-   real sign-in and real eligibility checks need a back end.
-------------------------------------------------------------------- */
 (function () {
   "use strict";
 

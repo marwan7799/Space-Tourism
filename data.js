@@ -1,11 +1,3 @@
-/* ------------------------------------------------------------------
-   data.js — all site content + the booking rules in one place.
-   (Loaded with a plain <script> so the site also works when you open
-   the HTML files by double-clicking them; fetch("data.json") does not.)
-
-   Images: copy everything from the starter kit's assets/ sub-folders
-   (destination, crew, technology) into ./files/ — file names are unique.
-------------------------------------------------------------------- */
 (function () {
   "use strict";
 

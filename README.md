@@ -12,7 +12,7 @@ A cinematic, front-end space tourism site — pick a destination, meet your crew
 [![No Build Step](https://img.shields.io/badge/Build%20Step-None-brightgreen)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
-[**Live Demo →**]([#](https://marwan7799.github.io/Space-Tourism/)) · [Report a Bug]([#](https://github.com/marwan7799/Space-Tourism/issues/new)) · [Request a Feature](https://github.com/marwan7799/Space-Tourism/issues/new/choose)
+[**Live Demo →**](https://marwan7799.github.io/Space-Tourism/) · [Report a Bug](https://github.com/marwan7799/Space-Tourism/issues/new) · [Request a Feature](https://github.com/marwan7799/Space-Tourism/issues/new/choose)
 
 </div>
 
